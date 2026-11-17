@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    android:background="#0d0d1a">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BiTaim"
+        android:textColor="#ff3232"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carrom Pool Aim Hack"
+        android:textColor="#888888"
+        android:textSize="15sp"
+        android:layout_marginBottom="48dp"/>
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="240dp"
+        android:layout_height="58dp"
+        android:text="▶  START HACK"
+        android:backgroundTint="#ff3232"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="240dp"
+        android:layout_height="58dp"
+        android:text="■  STOP"
+        android:backgroundTint="#222244"
+        android:textColor="#aaaaaa"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#1a1a2e"
+        android:padding="20dp"
+        android:layout_marginTop="48dp">
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="FEATURES:" android:textColor="#ff3232"
+            android:textStyle="bold" android:textSize="13sp" android:layout_marginBottom="10dp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="✦  Auto coin detection" android:textColor="#cccccc" android:textSize="13sp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="✦  Extended aim line" android:textColor="#cccccc" android:textSize="13sp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="✦  Power indicator" android:textColor="#cccccc" android:textSize="13sp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="✦  Wall bounce prediction" android:textColor="#cccccc" android:textSize="13sp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="✦  Best shot suggestion" android:textColor="#cccccc" android:textSize="13sp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="✦  Red queen highlight" android:textColor="#cccccc" android:textSize="13sp"/>
+    </LinearLayout>
+
+</LinearLayout>
