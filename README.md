@@ -1,20 +1,23 @@
 # BiTaimCarrom
 
-Android project based on the supplied `BiTaimCarrom_Build.md` source.
+Android application source for BiTaim Carrom.
 
 - Package: `com.bitaim.carrom`
-- minSdk: 29
-- targetSdk: 34
-- Build: `gradle :app:assembleDebug`
+- Module: `app`
+- Minimum SDK: 29
+- Target/compile SDK: 34
+- Android Gradle Plugin: 8.4.2
+- Kotlin Gradle plugin: 1.9.24
+- Gradle: 8.6
+- JDK: 17
+
+## Build
+
+Run `gradle :app:assembleDebug`. The unsigned debug APK is written to
+`app/build/outputs/apk/debug/app-debug.apk`.
 
 ## GitHub Actions
 
-The workflow at `.github/workflows/android-apk-release.yml` builds a debug APK
-on manual dispatch and on version-tag pushes (`v*`). Manual runs publish the
-APK as a downloadable workflow artifact. Pushing a tag such as `v1.0.0`
-additionally creates a GitHub Release and attaches `BiTaimCarrom.apk`.
-
-## Notes
-
-This is an unsigned debug APK. It is suitable for testing; a distributable
-signed release should use a signing key stored as GitHub Actions secrets.
+Run the **Android APK** workflow manually to build and download the APK artifact.
+Pushing a version tag such as `v1.0.0` also creates a GitHub Release and attaches
+`BiTaimCarrom.apk`. The APK produced by this workflow is an unsigned debug build.
