@@ -96,7 +96,11 @@ class CarromOverlayView(context: Context, private val screenW: Int, private val 
 
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
-        val shot = currentShot ?: drawWaiting(canvas).also { return }
+        val shot = currentShot
+        if (shot == null) {
+            drawWaiting(canvas)
+            return
+        }
 
         // 1. Highlight all detected coins
         drawDetectedCoins(canvas, shot)
